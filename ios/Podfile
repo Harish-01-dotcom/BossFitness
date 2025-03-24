@@ -4,6 +4,8 @@ require Pod::Executable.execute_command('node', ['-p',
     "react-native/scripts/react_native_pods.rb",
     {paths: [process.argv[1]]},
   )', __dir__]).strip
+  
+  $RNFirebaseAsStaticFramework = true
 
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
@@ -15,6 +17,7 @@ if linkage != nil
 end
 
 target 'BossFitness' do
+  use_frameworks! :linkage => :static
   config = use_native_modules!
 
   use_react_native!(
@@ -22,6 +25,10 @@ target 'BossFitness' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+  #pod 'Stripe', '~> 23.0.1'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
