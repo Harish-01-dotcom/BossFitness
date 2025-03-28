@@ -100,12 +100,12 @@ const styles = StyleSheet.create({
 
   confirmButton: {
     backgroundColor: '#FF5733',
-    paddingVertical: 10, // ↓ Reduced height
+    paddingVertical: 10,
     paddingHorizontal: 30,
     borderRadius: 25,
     alignSelf: 'center',
     marginVertical: 15,
-    minWidth: 200, // Optional: reduce if it's too wide
+    minWidth: 200,
   },
 
   confirmButtonText: {
