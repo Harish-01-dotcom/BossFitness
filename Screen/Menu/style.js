@@ -130,11 +130,10 @@ const styles = StyleSheet.create({
   },
 
   exerciseImage: {
-    width: '100%',
-    height: 180,
+    width: 300,
+    height: 200,
     resizeMode: 'cover',
-    borderRadius: 12,
-    marginBottom: 12,
+    borderRadius: 10,
   },
 
   // Diet input & button
