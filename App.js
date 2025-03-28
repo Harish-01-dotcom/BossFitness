@@ -22,7 +22,7 @@ const EmptyHeaderComponent = () => null;
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="MainPage">
+      <Stack.Navigator initialRouteName="LoginScreen">
         <Stack.Screen
           name="MainPage"
           component={MainPage}
