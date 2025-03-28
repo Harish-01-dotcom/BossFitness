@@ -218,7 +218,7 @@ export default function BookingScreen() {
                       onPress={() =>
                         handleDeleteSlot(bookedDate, category, index)
                       }>
-                      <Text style={styles.deleteText}>🗑</Text>
+                      <Text style={styles.deleteText}>❌</Text>
                     </TouchableOpacity>
                   </View>
                 ))}
