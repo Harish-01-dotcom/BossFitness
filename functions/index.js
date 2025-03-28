@@ -29,5 +29,4 @@ app.put('/user', (req, res) => {
   res.send('We updated a user with firstname of ' + req.body.firstName);
 });
 
-// Export the app as a Firebase HTTPS function
 export const helloWorld = functions.https.onRequest(app);

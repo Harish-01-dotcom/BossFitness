@@ -14,7 +14,7 @@ const SplashScreen = ({navigation}) => {
         const data = userDoc.data();
 
         if (data?.hasMembership === true) {
-          navigation.replace('MainPage'); // MainPage
+          navigation.replace('MainPage');
         } else {
           navigation.replace('MembershipScreen');
         }
