@@ -16,7 +16,6 @@ import VideoPlayerScreen from './Screen/VideoPlayerScreen/VideoPlayerScreen';
 
 const Stack = createStackNavigator();
 
-// Reusable empty header component to avoid nested component warning
 const EmptyHeaderComponent = () => null;
 
 export default function App() {
