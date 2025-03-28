@@ -12,15 +12,18 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    width: 80,
-    height: 80,
+    width: 60,
+    height: 60,
     resizeMode: 'contain',
   },
 
   tabBar: {
     flexDirection: 'row',
     justifyContent: 'space-around',
+    alignItems: 'center',
     backgroundColor: '#000',
+    paddingTop: 20,
+    paddingBottom: 15,
   },
 
   tabButton: {
