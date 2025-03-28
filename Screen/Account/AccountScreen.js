@@ -6,7 +6,7 @@ const AccountScreen = ({navigation}) => {
   const handleLogout = () => {
     Alert.alert('Logout', 'Are you sure you want to log out?', [
       {text: 'Cancel', style: 'cancel'},
-      {text: 'Logout', onPress: () => navigation.replace('LoginScreen')}, // ✅ Replaces the screen (no back button)
+      {text: 'Logout', onPress: () => navigation.replace('LoginScreen')},
     ]);
   };
 
