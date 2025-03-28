@@ -12,6 +12,7 @@ import AccountScreen from './Screen/Account/AccountScreen';
 import MembershipChangeScreen from './Screen/MembershipChange/MembershipChangeScreen';
 import PersonalDetails from './Screen/PersonalDetail/PersonalDetails';
 import Feedback from './Screen/Feedback/Feedback';
+import VideoPlayerScreen from './Screen/VideoPlayerScreen/VideoPlayerScreen';
 
 const Stack = createStackNavigator();
 
@@ -21,7 +22,7 @@ const EmptyHeaderComponent = () => null;
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="LoginScreen">
+      <Stack.Navigator initialRouteName="MainPage">
         <Stack.Screen
           name="MainPage"
           component={MainPage}
@@ -47,6 +48,7 @@ export default function App() {
         <Stack.Screen name="AccountScreen" component={AccountScreen} />
         <Stack.Screen name="PersonalDetails" component={PersonalDetails} />
         <Stack.Screen name="Feedback" component={Feedback} />
+        <Stack.Screen name="VideoPlayer" component={VideoPlayerScreen} />
         <Stack.Screen
           name="MembershipChangeScreen"
           component={MembershipChangeScreen}
